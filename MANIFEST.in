@@ -1,0 +1,18 @@
+include MANIFEST.in
+include requirements.txt
+include *.json
+include *.md
+include *.py
+include *.txt
+recursive-include face_attendance *.css
+recursive-include face_attendance *.csv
+recursive-include face_attendance *.html
+recursive-include face_attendance *.ico
+recursive-include face_attendance *.js
+recursive-include face_attendance *.json
+recursive-include face_attendance *.md
+recursive-include face_attendance *.png
+recursive-include face_attendance *.py
+recursive-include face_attendance *.svg
+recursive-include face_attendance *.txt
+recursive-exclude face_attendance *.pyc
