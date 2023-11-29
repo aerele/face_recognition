@@ -19,9 +19,10 @@ frappe.ui.form.on('Employee Check', {
 		  method:
 			"face_attendance.face_attendance.doctype.employee_check.employee_check.picture_for_verification",
 		  args: {
-			check: frm.doc.image_for_verification,
 			name: frm.doc.employee_name
 		  },
+		  freeze: true,
+		  freeze_message:"Please Wait while checking with the image",
 		  callback: function (r) {
 			if (r.message) {
 			  frappe.msgprint(r.message);
